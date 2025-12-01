@@ -11,37 +11,34 @@
 </head>
 <body>
     
-    <header class="top_nav">
+    <header class="top-nav">
 
         <div class="site-name">
-            <p>Christina Mathews</p>
+                <a href="/Index.html">
+                    <div class="site">
+                            Christina Mathews
+                    </div>
+                </a>            
         </div>
         
-        <div>
-            <img src="/Images/icons/nav_b.png" class="hamburger" alt="hamburger menu">
-        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+
+        <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+
+        <nav>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="About_Me.html">About Me</a></li>
+                <li><a href='Projects.html'>Projects</a></li>
+                <li><a href="Resume.html">Resume</a></li>
+            </ul>
+        </nav>
     </header>
-
-
-    <!--
-        <nav class="navbar">
-                <a href="Index.html" class="nav-branding"></a>
-
-                <ul class="nav-menu">
-                     <li class="nav-item">
-                            <a href="About_Me.html" class="nav-link">About Me</a>
-                     </li>
-                            <li class="nav-item">
-                            <a href="Work.html" class="nav-link">Work</a>
-                     </li>
-                            <li class="nav-item">
-                            <a href="Resume.html" class="nav-link">Resume</a>
-                     </li>
-                 </ul>
-
-             </nav>
-    -->        
-
     
     
     <main> 
@@ -51,21 +48,21 @@
                 <p class="five-star">
                     ✩✩✩✩✩
                 </p>
-                <h1>
+                <h1 >
                     UX/ID Designer
                 </h1>
 
-                <p>Hey! I'm Christina!</p>
-                <p>I am a passionate designer with a love for creating. I design with the intention of <b>creating impactful, engaging,</b> and <b>intuitive user experiences.</b></p>
+
+                <div class="intro-sub-text">
+                <p><span class="sub-greet">Hey! I'm Christina!</span>  <br><br>I am a passionate designer with a love for creating. I design with the intention of creating <span class="sub-desc">impactful</span>, <span class="sub-desc">engaging</span>, and <span class="sub-desc">intuitive</span> user experiences.</p>
+                </div>
+                
                    
                 <div class="button-center">
                     <a href="About_Me.html" class="link-work">
-                        <div>Read More About Me</div>
+                        <div class="read-me-text-button">Read More About Me</div>
                     </a>      
                 </div>
-
-                
-
             </div>
         
             <!--my charcters hoodie will lok like its hanging off the button-->
@@ -74,10 +71,11 @@
                 alt="white pixel version of character me hanging by her hoodie"
                 class="persona"
                 loading="lazy"
-                src="Images/person_v2.webp"
+                src="Images/Persona/me_outline_purple.webp"
                 >
             </figure>
         </section>
+        
 
         <!--Project 1-->
         <section class="projects">
@@ -90,12 +88,12 @@
                 </h2>
 
 
-                <figure class="tt-box">
+                <figure class="cs-cover-box">
                     <img 
                         alt="Two smartphones displaying the TuneToday guitar app, the biggere screen showing the tuning interfance and the smaller screen showing the song libary"
-                        class="tune-today-picture"                        
+                        class="tune-today-picture"                       
                         loading="lazy"
-                        src="Images/TuneToday'.webp"
+                        src="Images/covers/TuneToday'.webp"
                     >
                 </figure>
 
@@ -122,15 +120,17 @@
                 </div>
 
                 <div class="no-link">
-                    <p>Check It Out</p>   
+                    <p>Check It Out!</p>   
                 </div>
-
-
 
 
             </div>
         
         </section>
+
+        <!--line that adds visual seperation (not a border)-->
+        <div class="line-seperator"></div>            
+
     
         <!--Project 2-->
         <section class="projects">
@@ -142,13 +142,12 @@
                     PMTC Redesign
                 </h2>
 
-                <figure>
+                <figure class="cs-cover-box">
                     <img 
-                        alt="A Laptop with a Phone in front of it to the right showcasing the homepage screen of The Philadelphia Mar Thoma Church Redesign Website"
-                        height="169"
+                        alt="A Laptop with a Phone in front of it to the right showcasing the homepage screen of The Philadelphia Mar Thoma Church Redesign Website" 
+                        class="pmtc-pic"
                         loading="lazy"
-                        src="Images/PMTC_Cover.webp"
-                        width="295"
+                        src="Images/covers/PMTC_Cover.webp"
                     >
                 </figure>
 
@@ -158,7 +157,7 @@
 
 
                 <div class="project-des">
-                    <p>The Philadelphia Mar Thoma Church Website provides information and encourages engagement of many different events. </p>
+                    <p>The Philadelphia Mar Thoma Church Redesigned Website provides information and encourages engagement of many different events allowing for more user interactions! </p>
                 </div>
 
                 <div class="skills-all">
@@ -174,17 +173,21 @@
                         <p>Wireframes</p>
                     </div>
                 </div>
-
+                
                 <div class="button-center">
-                    <a href="PMTC_Case_Study.html" class="link-work">
-                        <p>Check It Out!</p>
-                    </a>
+                    <a href="pmtc_cs.html" class="link-work">
+                        <div class="pmtc-check-it">Check It Out!</div>
+                    </a>      
                 </div>
 
 
             </div>
         
         </section>  
+
+        
+        <!--line that adds visual seperation (not a border)-->
+        <div class="line-seperator"></div>   
 
         <!--Project 3-->
         <section class="projects">
@@ -197,12 +200,13 @@
                 </h2>
 
 
-                <figure>
+                <figure class="cs-cover-box">
                     <img 
                     alt="A Laptop with a screen showcasing the Low-Fidelity Wireframe of the Redesignied Fandango Homepage"
+                    class="fan-pic"
                     height="191"
                     loading="lazy"
-                    src="Images/Fandango.webp"
+                    src="Images/covers/Fandango.webp"
                     width="322"
                     >
                 </figure>
@@ -233,7 +237,7 @@
 
                 <div class="no-link">
                     <p>
-                        Check It Out
+                        Check It Out!
                     </p>
                 </div> 
 
@@ -256,7 +260,7 @@
                         alt="white-email-logo"
                         height="592"
                         loading="lazy"
-                        src="Images/icons/email_logoo.webp"
+                        src="Images/icons/email_w_logo.png"
                         width="700"
                         class="email-logo"
                     >
@@ -268,7 +272,7 @@
                 
                 <!--linkedin-->
                 <div class="linkedin">
-                    <img src="Images/icons/linkin_logoo.webp" alt="white linkedin logo with the abbrivation of in" class="linkedin-logo">
+                    <img src="Images/icons/linkin_w_logo.png" alt="white linkedin logo with the abbrivation of in" class="linkedin-logo">
 
                     <a href="www.linkedin.com/in/christina-mathews-ba21832b8/" class="linkin-link" target="_blank">
                         <div class="footer-text">
@@ -277,8 +281,6 @@
                     </a>
                 <!--link is not working, double check that-->
                 </div>
-
-            
            
         </div>
        

@@ -4,133 +4,211 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+
+    
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="normalize.css">
 </head>
 
 <body>
-    <section>
-        <header>
-            <h1>About Me!</h1>
-        </header>
 
-        <div>
-            <img src="" class="personal-photo" alt="Image of Me from highschool graduation">
+    <header class="top-nav">
 
-            <div class="about-me-text">
-                    <p>
-                        If you still arent aware of who I am well I'm Christina! I am currently an undergraduate student studying User Experience and Interaction Design at Drexel University!
-                    </p>
+        <div class="site-name">
+                <a href="/Index.html">
+                    <div class="site">
+                            Christina Mathews
+                    </div>
+                </a>            
+        </div>
+        
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
 
-                    <p>
-                        I consider myself a creative designer who is confident in my UI skills. I am open-minded and tend to understand users’ needs, and with this, I bring valuable information and skills to the table. 
-                    </p>
+        <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
 
-                    <p>
-                        My main focus is around UI and UX designs, creating wireframes of all fidelity and prototypes.
-                    </p>
+
+        <nav>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="About_Me.html">About Me</a></li>
+                <li><a href='Projects.html'>Projects</a></li>
+                <li><a href="Resume.html">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    
+    <main>
+
+        <!--Hero Section-->
+        <section class="hero">
+            <div class="intro-text">
+                <p class="five-star">
+                    ✩✩✩✩✩
+                </p>
+                <h1 class="page-title">
+                    About Me
+                </h1>
+                <div class="intro-sub-text">
+                    <div>
+                        <p><span class="sub-greet">Who am I??</span></p>
+                    </div>
+                  
                 </div>
-            </div>
+                
+            </div> 
+            
+            <figure class="cs-cover-box">
+                <img 
+                src="/Images/covers/pfp_about.png" 
+                alt="Image of Christina smiling towards camera"
+                class="personal-photo"
+                alt="Image of Me from highschool graduation"
+                >
 
-     </section>
+            </figure>
+        </section>
+                
+        <div class="about-me-text">
+                <p>
+                If you still arent aware of who I am well I'm Christina! I am currently an undergraduate student studying User Experience and Interaction Design at Drexel University!
+                <br><br>  
+                I consider myself a creative designer who is confident in my UI skills. I am open-minded and tend to understand users' needs, and with this, I bring valuable information and skills to the table. 
+                <br><br> 
+                My main focus is around UI and UX designs, creating wireframes of all fidelity and prototypes.
+                </p>
 
+        </div>
 
-    <div>
-    <!--Down arrow before creative stuff-->
-        <img 
-        alt="White pixel image of downarrow"
-        height="41"
-        loading="lazy"
-        src="Images/downarrow.webp"
-        width="41"
-        >
-    </div>
+            <!--Down arrow before creative stuff-->
+            <figure class="cs-cover-box">
+                <img 
+                alt="White pixel image of downarrow"
+                class="downarrow-box"
+                loading="lazy"
+                src="Images/icons/downarrowpurple.png"
+                width="41"
+                >
+            </figure>
    
     
-    <div>
-        <header>
-            <h2>Creative Stuff!</h2>
-        </header>
+        <section class="creative-work-box">
+            <div>
+               <h2>Creative Stuff!</h2>
+            </div>
+
+            <!--want to try and have text over image-->
+
+            
+                <div class="section-work-container">
+                    <!-- <div class="cstuff-title-vid">
+                        <h3>Video Editing</h3>
+                    </div> -->
+                    
+                    <figure class="cw-cover-box">
+                        <img 
+                        alt="2d version of Christina with hands up at the bottom with an explosion behind her over a black background"
+                        class="CW-topic-cover"
+                        loading="lazy"
+                        src="Images/about/vid_about.webp"
+                        >                
+                    </figure>
+                </div>
+
+                <div class="section-work-container">
+                    <!--<div class="cstuff-title">
+                        <h3>Art Work</h3>
+                    </div>-->
+                    
         
-    <!--want to try and have text over image-->
+                    <figure class="cw-cover-box">
+                        <img 
+                            alt="Design of Ipco logo design that won in 2024 of the national animal for India (Tiger) and Pakistan(Markhor)"
+                            class="CW-topic-cover"
+                            loading="lazy"
+                            src="Images/about/ipco_about.png"
+                        >                
+                    </figure>
 
-        <div>
-            <div>
-                 <h3>Art Work</h3>
-            </div>
-           
-            <div>
-                <img 
-                    alt="Design of Ipco logo design that won in 2024 of the national animal for India (Tiger) and Pakistan(Markhor)"
-                    height="300"
-                    loading="lazy"
-                    src="Images/Ipco.webp"
-                    width="300"
-                >                
-            </div>
-        </div>    
+                </div>
 
-        <div>
-            <div>
-                 <h3>Video Editing</h3>
-            </div>
-           
-            <div>
-                <img 
-                    alt="2d version of Christina with hands up at the bottom with an explosion behind her over a black background"
-                    height="300"
-                    loading="lazy"
-                    src="Images/videditing.webp"
-                    width="300" 
-                />                
-            </div>
-        </div>  
 
-        <div>
-            <div>
-                 <h3>Game Dev</h3>
-            </div>
-           
-            <div>
-                <img 
+
+
+            <div class="section-work-container">
+                <!-- <div class="cstuff-title">
+                    <h3>Game Dev</h3>
+                </div>-->
+                
+                <figure class="cw-cover-box">
+                    <img 
                     alt="Pixel character in the middle of a pixeled bedroom with the moonlight shining through the single window"
-                    height="300"
+                    class="CW-topic-cover"
                     loading="lazy"
-                    src="Images/game.webp"
-                    width="300"
-                />                
+                    src="Images/about/gamedev_about.webp"
+                    >                
+                </figure>
             </div>
-        </div>
 
-
-        <div>
-            <div>
-                 <h3>Photography</h3>
-            </div>
-           
-            <div>
-                <img 
+            <section class="section-work-container">
+              <!-- <div class="cstuff-title-photo">
+                    <h3>Photography</h3>
+                </div>!-->
+                
+                <figure class="cw-cover-box">
+                    <img 
                     alt="Photography of zoomed in image of traffic in India. Two men on a scooter with three cars in the background"
-                    height="300"
+                    class="CW-topic-cover"
                     loading="lazy"
-                    src="Images/motherland.png"
-                    width="300"
-                />                
-            </div>
-        </div>
-    </div>
+                    src="Images/about/photo_about.webp"
+                    >                
+                </figure>
+            </section>
+        </section>
+    </main>
+   
 
     <footer>
         <h3>Any Questions? Contact ME!</h3>
 
-        <div>
-            <img src="" alt="white outline of aa letter to represent email icon">
-            <p>csm347@drexel.edu</p>
+        <div class="footer-links">
+              <!--email link-->
+            
+                <div class="email">
+                    <img
+                        alt="white-email-logo"
+                        height="592"
+                        loading="lazy"
+                        src="Images/icons/email_w_logo.png"
+                        width="700"
+                        class="email-logo"
+                    >
+                    
+                    <a href="mailto:csm347@drexel.edu">
+                        <div class="footer-text">csm347@drexel.edu</div>
+                    </a>     
+                </div>
+                
+                <!--linkedin-->
+                <div class="linkedin">
+                    <img src="Images/icons/linkin_w_logo.png" alt="white linkedin logo with the abbrivation of in" class="linkedin-logo">
+
+                    <a href="www.linkedin.com/in/christina-mathews-ba21832b8/" class="linkin-link" target="_blank">
+                        <div class="footer-text">
+                            christina-mathews
+                        </div>
+                    </a>
+                <!--link is not working, double check that-->
+                </div>
+           
         </div>
        
-        <div>
-            <img src="" alt="Bold white letters of lowercase I and N, in">
-            <p>christina-mathews</p>
-        </div>
-    </footer>   
+    </footer> 
 
 </body>
 </html>

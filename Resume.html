@@ -4,16 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
+
+    
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="normalize.css">
+
 </head>
 <body>
-<!--honestly just a button that downloads my resume as a pdf-->
 
-    <h1>Resume</h1>
-    <p>Take a glance at my resume!</p>
+    <header class="top-nav">
 
-    <p>Download my <a href="Downloads/resume.pdf" download>resume</a></p>
-    
-<!--its not working-->
+        <div class="site-name">
+                <a href="/Index.html">
+                    <div class="site">
+                            Christina Mathews
+                    </div>
+                </a>            
+        </div>
+        
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+
+        <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+
+        <nav>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="About_Me.html">About Me</a></li>
+                <li><a href='Projects.html'>Projects</a></li>
+                <li><a href="Resume.html">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--honestly just a button that downloads my resume as a pdf-->
+
+        <section class="hero">
+            <div class="intro-text">
+                <p class="five-star">       
+                 ✩✩✩✩✩
+                 </p>
+                <h1 class="page-title">
+                    Resume
+                </h1>
+                <div class="intro-sub-text">
+                    <p><span class="sub-greet">!!!!!!!!!!!</span></p>
+                </div>
+                
+            </div>
+
+                <div class="button-center">
+                    <a href="Downloads/resume.pdf" class="link-work">
+                        <div class="download">Download My Resume!</div>
+                    </a>      
+                </div>
+        </section>
+
+
+    </main>
+
+    <footer class="resume-footer">
+        <h3>Any Questions? Contact ME!</h3>
+
+        <div class="footer-links">
+              <!--email link-->
+            
+                <div class="email">
+                    <img
+                        alt="white-email-logo"
+                        height="592"
+                        loading="lazy"
+                        src="Images/icons/email_w_logo.png"
+                        width="700"
+                        class="email-logo"
+                    >
+                    
+                    <a href="mailto:csm347@drexel.edu">
+                        <div class="footer-text">csm347@drexel.edu</div>
+                    </a>     
+                </div>
+                
+                <!--linkedin-->
+                <div class="linkedin">
+                    <img src="Images/icons/linkin_w_logo.png" alt="white linkedin logo with the abbrivation of in" class="linkedin-logo">
+
+                    <a href="www.linkedin.com/in/christina-mathews-ba21832b8/" class="linkin-link" target="_blank">
+                        <div class="footer-text">
+                            christina-mathews
+                        </div>
+                    </a>
+                <!--link is not working, double check that-->
+                </div>
+           
+        </div>
+       
+    </footer> 
 
 </body>
 </html>
