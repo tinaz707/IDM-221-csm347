@@ -271,7 +271,8 @@ p{
 
 .button-center-prototype{
     text-align: center;
-    margin: 20px;
+    margin: 20px 20px 0px;
+    padding-bottom: 30px;
 }
 
 .link-work{
