@@ -32,11 +32,14 @@
     --font-small: 12px;
     --font-normal: 16px;
     --font-default: 18px;
+    --font-medium: 20px;
     --font-large: 24px;
     --font-header: 36px;
 
     --letter-space: 1.5px;
     --nav-height: 60x;
+
+    --border-radius-norm: 20px;
 
     
     --small-space: 5px;
@@ -45,7 +48,7 @@
     --section-space: 35px 0px;
     --default-line-height: 1.5;
 
-    --min-width-mobile: 200px;
+    --min-width-mobile: 300px;
 
     
 }
@@ -245,7 +248,7 @@ p{
 .CW-topic-cover{
     width: 90%;
     border: 2px solid var(--color-main-purple);
-    border-radius: 20px;
+    border-radius: var(--border-radius-norm);
     
 }
 
@@ -277,9 +280,9 @@ p{
     background-color: var(--color-main-purple);    
     color: var(--color-text-black);                   
     display: inline-block;                      
-    padding: 15px 25px;     
+    padding: 20px 25px;     
     /*margin: 10px 10px 0px;*/                  
-    border-radius: 20px;                        
+    border-radius: var(--border-radius-norm);                        
     text-decoration: none;                     
     font-weight: lighter;    
     text-align: center;
@@ -307,7 +310,7 @@ p{
 }
 
 /*figma link on the case study page for pmtc*/
-.pmtc-figma-link{
+.figma-link{
     font-size: 18px;
     font-family: 'K2D';
     width: auto;
@@ -338,11 +341,11 @@ p{
 .project-intro-index{
 
     h2{
-        margin: 0px 10px;
+        margin: 0px;
     }
 
     p{
-        margin: 0px 10px;
+        margin: 0px;
     }
 
 }
@@ -358,7 +361,7 @@ p{
 .page-jump-projects{
     font-family: 'K2D';    
     color: var(--color-main-purple);                  
-    border-radius: 20px;                        
+    border-radius: var(--border-radius-norm);                        
     text-decoration: none;                     
     font-style: italic;    
     text-align: right;
@@ -366,14 +369,15 @@ p{
 /*view more projects-----*/
 
 .projects{ 
-    padding: var(--section-space);
+    padding: 35px 10px; /*section gap, side padding*/
 }
 
 .project-section{
     margin: var(--section-space);
     text-align: center;
-    max-width: 400px;
-    line-height: var(--default-line-height);   
+    max-width: 500px;
+    line-height: var(--default-line-height); 
+    
 
 }
 
@@ -413,6 +417,7 @@ p{
 .cs-cover-box{
     padding: 10px 0px; 
     text-align: center;
+
 }
 
 
@@ -457,7 +462,7 @@ p{
 
 /*case study page labels boxes at the top of page*/
 .cs-desc-box{
-    border-radius: 20px;
+    border-radius: var(--border-radius-norm);
     text-align: center;
     padding: var(--medium-space);
     margin: var(--large-space);
@@ -471,53 +476,72 @@ p{
     letter-spacing: var(--letter-space);
     margin: var(--medium-space);
     margin-bottom: 0px;
-
-    h3{
-        font-size: 18px;
-    }
+    text-decoration: underline;
+    text-decoration-color: var(--color-main-purple);
 }
+
+.section-sub-title{
+    text-align: left;
+    letter-spacing: var(--letter-space);
+    margin: var(--medium-space);
+    margin-bottom: 0px;
+    text-decoration: none;
+    font-size: var(--font-medium);
+    
+}
+
+
 
 /*case study paragraph padding space*/
 .section-text{
     padding: var(--medium-space);
     padding-top: 5px;
+    
 }
 
-
-
-/*individual images*/
-.tune-today-picture{
-    width: 70%;         
-    height: auto;        
+.end-text{
+    text-align: center;
+    padding: var(--large-space);
+    font-size: var(--font-large);
 }
 
-.pmtc-pic{
-    width: 90%;         
+.image-direction{
+    font-style: italic;
+}
+
+.indivdual-horizontal-pic{
+    width: 100%;
+    max-width: 500px;  
     height: auto;         
 }
 
-
-
-.fan-pic{
-    width: 90%;         
+.indivdual-vertical-pic{
+    width: 100%;
+    max-width: 300px; 
     height: auto;         
 }
+
 
 .personal-photo{
-    min-width: var(--min-width-mobile);
-    width: 70%;
+    min-width: 200px;
+    width: 100%;
+    max-width: 300px;  
     border: 5px dashed var(--color-main-purple);
     border-radius: 200px;
 }
 
-.downarrow-box{
-    width:40px;
-    height: 45px;
+
+
+.down-arrow{
+    width: 100%;
+    padding: 10px;
+    max-width: 68px; 
+    min-width: 38;
+
+
 }
 
-
-
-/*case study images for pmtc-------*/
+/*case study images-------*/
 
 /*main box but for the case study actual page*/
 .cs-hero-image{
@@ -526,35 +550,25 @@ p{
     text-align: center;
 }
 
-/*image on the actual case study page*/
-.pmtc-pic-hero{
-    width: 100%;         
-    height: auto;
-}
 
 .cs-study-image-container{
     padding: 10px 0px; 
-    margin: 10px 0px 0px;
+    margin: 5px 0px 20px;
    
 }
 
 .cs-image{
-    width: 100%;         
-    height: auto;
-    border-radius: 20px;
+    width: 100%;
+    border-radius: var(--border-radius-norm);
 }
-/*case study images for pmtc-------*/
+/*case study images-------*/
 
-
-
-/*cs pafe listing arrow instaed of bullet points*/
-.list-arrow{
-    margin-bottom: 20px;
-
-
-}
 
 .cs_list{
+
+    margin: 0px;
+    padding-top:5px ;
+    padding-bottom: 10px;
 
     li{
         font-family: 'K2D';
@@ -566,13 +580,15 @@ p{
 
 /*fan and pmtc buttons*/
 .no-link{
-    background-color: var(--color-main-purple);      
-    color: var(--color-text-black);                   
+    background-color: var(--color-black);      
+    color: var(--color-main-purple);                   
     padding: 15px 20px;    
-    max-width: 200px;                     
-    border-radius: 20px;                                           
+    max-width: 200px;     
+    border: 2px solid var(--color-main-purple);
+    border-radius: 20px;                                      
     font-weight: lighter;    
     margin: 20px auto;
+
 }
 
 
