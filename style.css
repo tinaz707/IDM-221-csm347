@@ -256,7 +256,7 @@ p{
 
 
 
-/*space around About Me Button*/
+/*space around button*/
 .button-center{
     text-align: center;
     margin: 20px 20px 0px; /*top, right + left, bottom*/
@@ -269,26 +269,23 @@ p{
 }
 
 
-.button-center-protoype{
+.button-center-prototype{
     text-align: center;
     margin: 20px;
 }
 
-/*read about me + PMTC button*/
 .link-work{
     font-family: 'Home-Video';
     background-color: var(--color-main-purple);    
     color: var(--color-text-black);                   
     display: inline-block;                      
-    padding: 20px 25px;     
-    /*margin: 10px 10px 0px;*/                  
+    padding: 20px 25px;                
     border-radius: var(--border-radius-norm);                        
     text-decoration: none;                     
-    font-weight: lighter;    
-    text-align: center;
+    font-weight: lighter; 
 }
 
-/*homepage read more about me div(the text)*/
+/*read more about me text)*/
 .read-me-text-button{
     font-size: 18px;
     font-family: 'K2D';
@@ -296,20 +293,19 @@ p{
     padding: 5px 10px;
 }
 
-/*resume donload*/
+/*resume*/
 .download{
     font-size: 18px;
     font-family: 'K2D';
 }
 
-/*homepage button div(so the text)*/
-.pmtc-check-it{
+/*View cs button text)*/
+.view-cs-text{
     font-size: 18px;
     font-family: 'K2D';
     width: 160px;
 }
 
-/*figma link on the case study page for pmtc*/
 .figma-link{
     font-size: 18px;
     font-family: 'K2D';
@@ -317,8 +313,7 @@ p{
     padding: 10px 15px;
 }
 
-
-/*my charcter---------*/
+/*my character---------*/
 .hero-image{
     margin: 0px 20px;
     left: 20px;
@@ -329,13 +324,13 @@ p{
     min-width: 80%;
     height: auto;
 }
-/*my charcter---------*/
+/*my character---------*/
 
-.line-seperator{
+.line-separator{
     background-color: var(--color-main-purple);
     height: 3px;
     width: 100px;
-    margin: 30px auto;
+    margin: 20px auto;
 }
 
 .project-intro-index{
@@ -377,23 +372,20 @@ p{
     text-align: center;
     max-width: 500px;
     line-height: var(--default-line-height); 
-    
 
 }
 
-/*the number of the project*/
+/*project number*/
 .number{
     font-size: 36px;
     margin: 15px;
 }
 
-/*title of project*/
+/*project title*/
 .project-section h2{
-    text-align: center;
     font-size: 32px;
     line-height: var(--default-line-height);
     margin: 0px;
-    
 }
 
 /*description right below image*/
@@ -406,25 +398,24 @@ p{
     padding: var(--medium-space);
 }
 
-/*the space between sections so like problem section then solution section has a good gap*/
+/*the space between cs sections*/
 .case-study-section{
     margin:var(--section-space);
+    padding: 10px 0px;
 }
 
 
 
-/*the main box holding the image homepage project overview*/
+/*box containing homepage project overview*/
 .cs-cover-box{
     padding: 10px 0px; 
     text-align: center;
-
 }
 
 
 /*the creative work images container*/
 .cw-cover-box{
-    padding: 10px 0px; 
-    text-align: center;
+    padding: 10px 0px;
 }
 
 .creative-work-box{
@@ -441,9 +432,13 @@ p{
     }
 }
 
-.unavaliable{
+/*.unavaliable{
     font-size: var(--font-default);
     font-style: italic;
+} */
+
+.cs-all-description{
+    padding: 20px 0px;
 }
 
 .cs-desc-title{
@@ -466,8 +461,6 @@ p{
     text-align: center;
     padding: var(--medium-space);
     margin: var(--large-space);
-   
-    height: auto;
 }
 
 /*case study page elements*/
@@ -490,8 +483,6 @@ p{
     
 }
 
-
-
 /*case study paragraph padding space*/
 .section-text{
     padding: var(--medium-space);
@@ -509,18 +500,17 @@ p{
     font-style: italic;
 }
 
-.indivdual-horizontal-pic{
+.individual-horizontal-pic{
     width: 100%;
     max-width: 500px;  
     height: auto;         
 }
 
-.indivdual-vertical-pic{
+.individual-vertical-pic{
     width: 100%;
     max-width: 300px; 
     height: auto;         
 }
-
 
 .personal-photo{
     min-width: 200px;
@@ -530,20 +520,13 @@ p{
     border-radius: 200px;
 }
 
-
-
 .down-arrow{
     width: 100%;
     padding: 10px;
     max-width: 68px; 
     min-width: 38;
-
-
 }
 
-/*case study images-------*/
-
-/*main box but for the case study actual page*/
 .cs-hero-image{
     padding: 10px 10px 0px; 
     margin: auto;
@@ -551,17 +534,15 @@ p{
 }
 
 
-.cs-study-image-container{
+.cs-image-container{
     padding: 10px 0px; 
-    margin: 5px 0px 20px;
-   
+    margin: 5px 0px 20px;  
 }
 
 .cs-image{
     width: 100%;
     border-radius: var(--border-radius-norm);
 }
-/*case study images-------*/
 
 
 .cs_list{
@@ -578,7 +559,6 @@ p{
     }
 }
 
-/*fan and pmtc buttons*/
 .no-link{
     background-color: var(--color-black);      
     color: var(--color-main-purple);                   
@@ -588,12 +568,8 @@ p{
     border-radius: 20px;                                      
     font-weight: lighter;    
     margin: 20px auto;
-
 }
 
-
-
-/*footer----------------------*/
 footer{
     background-color: var(--color-black);
     color: var(--color-main-purple);
@@ -605,30 +581,11 @@ footer{
     width: 100%;
 }
 
-.resume-footer{
-    background-color: var(--color-black);
-    color: var(--color-main-purple);
-    font-family: 'K2D';
-    letter-spacing: var(--letter-space);
-    border-top: 2px solid var(--color-white);    
-    margin: 20px 0px 0px; 
-    padding: 40px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-   
-}
-
-
 .footer-links{
     text-align: center;
-    display: block;
     margin: 5px;
-    
 }
 
-/*questions?contact me text*/
 .footer, h3{
     text-align: center;
 }
@@ -638,7 +595,6 @@ footer{
     font-weight: bold;
     display: inline-block;
     padding: 10px 0px;
-    
  }
 
 .linkedin{
@@ -648,25 +604,9 @@ footer{
     font-size: var(--font-normal);
 }
 
-.linkedin-logo{
-    width: 30px;
-    height: 30px;
-    vertical-align: middle;
-    position: relative;
-}
-
 .email{
     margin: 5px;
     padding: 15px 15px 0px;
     color: var(--color-black);    
     font-size: var(--font-normal);
-    z-index: 100;
 }
-
-.email-logo{
-    width: 30px;
-    height: 30px;
-    vertical-align: middle;
-    position: relative;
-}
-
