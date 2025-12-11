@@ -493,7 +493,8 @@ p{
 
 .end-text{
     text-align: center;
-    padding: var(--large-space);
+    padding: 0px 20px 30px;
+    margin: 20px 20px 0px;
     font-size: var(--font-large);
 }
 
